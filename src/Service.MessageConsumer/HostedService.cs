@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Service.Infrastructure;
 
-namespace ScheduledMessageConsumer.Service
+namespace Service.MessageConsumer
 {
     public class HostedService
     {
