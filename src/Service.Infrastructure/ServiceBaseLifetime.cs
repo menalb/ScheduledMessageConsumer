@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using System.ServiceProcess;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
 
-namespace ScheduledMessageConsumer.Infrastructure
+namespace Service.Infrastructure
 {
     public class ServiceBaseLifetime : ServiceBase, IHostLifetime
     {

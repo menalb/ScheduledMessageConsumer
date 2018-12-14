@@ -3,7 +3,7 @@ using Microsoft.Extensions.Hosting;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ScheduledMessageConsumer.Infrastructure
+namespace Service.Infrastructure
 {
     public static class ServiceBaseLifetimeHostExtensions
     {
