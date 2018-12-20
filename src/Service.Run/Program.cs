@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Serilog;
 
 using Service.MessageConsumer;
+using Service.Run.Jobs;
 
 namespace Service.Run
 {
@@ -15,14 +16,14 @@ namespace Service.Run
         {
             var isService = !(Debugger.IsAttached || args.Contains("--console"));
 
-            var configuration = new ConfigurationBuilder()
-               // .AddJsonFile("appsettings.json")
-               .Build();
+            var configuration = BuildConfiguration();
 
-            var logger = new LoggerConfiguration()
-                .ReadFrom.Configuration(configuration).CreateLogger();
-
-            //await HostedService.RunHostedService<ProcessPromotionalCreditJob>(s => s.ConfigureService(configuration), isService);
+            await HostedService.RunHostedService<ProcessMyJob>(s => s.ConfigureService(configuration), isService);
         }
+
+        private static IConfiguration BuildConfiguration() =>
+            new ConfigurationBuilder()
+                //.AddJsonFile("appsettings.json")
+                .Build();
     }
 }

@@ -1,2 +1,2 @@
 # ScheduledMessageConsumer
-Scheduled Services with DotnetCore
+Scheduled Services with Dotnet Core
