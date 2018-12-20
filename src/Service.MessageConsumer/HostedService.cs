@@ -15,7 +15,7 @@ namespace Service.MessageConsumer
             var builder = new HostBuilder()
                 .ConfigureServices((hostContext, services) =>
                 {
-                    // services.AddHostedService<MessagesProcessorService<TJobService>>();
+                    services.AddHostedService<MessagesConsumerService<TJobService>>();
 
                     registerServices(services);
                 });
