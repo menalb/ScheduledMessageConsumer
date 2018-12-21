@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Quartz;
 
-namespace Service.MessageConsumer
+namespace Service.Consumer
 {
     public abstract class MessageConsumerJobBase<TJob> : IJob
     {

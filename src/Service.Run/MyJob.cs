@@ -1,11 +1,11 @@
 using Microsoft.Extensions.Logging;
-using Service.MessageConsumer;
+using Service.Consumer;
 
 namespace Service.Run.Jobs
 {
     public class ProcessMyJob : MessageConsumerJobBase<ProcessMyJob>
     {
-        public ProcessMyJob(ILogger<ProcessMyJob> logger, MessageConsumer.MessageConsumer processor) : base(logger, processor)
+        public ProcessMyJob(ILogger<ProcessMyJob> logger, MessageConsumer processor) : base(logger, processor)
         {
         }
     }

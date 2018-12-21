@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Serilog;
 
-using Service.MessageConsumer;
+using Service.Consumer;
 using Service.Run.Jobs;
 
 namespace Service.Run

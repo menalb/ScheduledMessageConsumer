@@ -12,6 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Service.MessageConsumer\Service.MessageConsumer.csproj" />
+    <ProjectReference Include="..\Service.Consumer\Service.Consumer.csproj" />
   </ItemGroup>
 </Project>

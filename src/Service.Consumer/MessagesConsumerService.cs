@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Quartz;
 
-namespace Service.MessageConsumer
+namespace Service.Consumer
 {
      public class MessagesConsumerService<TJobService> : IHostedService, IDisposable where TJobService : IJob
     {

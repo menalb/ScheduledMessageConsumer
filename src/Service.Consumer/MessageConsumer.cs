@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace Service.MessageConsumer
+namespace Service.Consumer
 {
     public interface MessageConsumer
     {

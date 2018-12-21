@@ -1,6 +1,6 @@
 using Quartz;
 
-namespace Service.MessageConsumer
+namespace Service.Consumer
 {
     public class SchedulerConfiguration
     {
